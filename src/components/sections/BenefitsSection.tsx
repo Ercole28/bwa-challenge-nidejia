@@ -48,7 +48,7 @@ export default function BenefitsSection() {
           </div>
           <ul className="flex w-full flex-col gap-y-5">
             {benefits.map((benefit) => (
-              <li className="flex items-center gap-x-3">
+              <li key={benefit} className="flex items-center gap-x-3">
                 <div className="relative aspect-square h-9 w-9">
                   <Image
                     fill

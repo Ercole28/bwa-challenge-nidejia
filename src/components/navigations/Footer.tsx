@@ -83,7 +83,7 @@ export default function Footer() {
             <span className="font-semibold text-white">Solutions</span>
             <ul className="flex flex-col gap-y-3">
               {footerLinks.solutions.map((item) => (
-                <li>
+                <li key={item?.label}>
                   <Link
                     href={item?.href}
                     className="font-normal text-[#A8A8A8] hover:font-semibold hover:text-[#FF9357]"
@@ -98,7 +98,7 @@ export default function Footer() {
             <span className="font-semibold text-white">Product</span>
             <ul className="flex flex-col gap-y-3">
               {footerLinks.product.map((item) => (
-                <li>
+                <li key={item?.label}>
                   <Link
                     href={item?.href}
                     className="font-normal text-[#A8A8A8] hover:font-semibold hover:text-[#FF9357]"
@@ -113,7 +113,7 @@ export default function Footer() {
             <span className="font-semibold text-white">Company</span>
             <ul className="flex flex-col gap-y-3">
               {footerLinks.company.map((item) => (
-                <li>
+                <li key={item?.label}>
                   <Link
                     href={item?.href}
                     className="font-normal text-[#A8A8A8] hover:font-semibold hover:text-[#FF9357]"

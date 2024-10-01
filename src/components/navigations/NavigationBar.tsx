@@ -39,7 +39,7 @@ export default function NavigationBar() {
         <nav>
           <ul className="flex items-center justify-center gap-x-[30px]">
             {navigationLinks.map((item) => (
-              <li>
+              <li key={item?.label}>
                 <a
                   href={item?.href}
                   className="text-base font-semibold text-white"
