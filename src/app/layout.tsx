@@ -10,6 +10,12 @@ const PoppinsFont = Poppins({
 export const metadata: Metadata = {
   title: "Nidejia",
   description: "Nidejia Clone",
+  icons: {
+    icon: ["/favicon.ico?v=1"],
+    apple: ["/apple-touch-icon.png?v=1"],
+    shortcut: ["/apple-touch-icon.png?v=1"],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
