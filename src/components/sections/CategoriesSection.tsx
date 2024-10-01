@@ -62,7 +62,10 @@ export default function CategoriesSection() {
         {/* Categories */}
         <div className="grid w-full grid-cols-4 gap-[30px]">
           {categories.map((item) => (
-            <div className="flex w-full items-center gap-x-4 rounded-[20px] bg-[#202020] px-5 py-4">
+            <div
+              key={item?.categoryName}
+              className="flex w-full items-center gap-x-4 rounded-[20px] bg-[#202020] px-5 py-4"
+            >
               <div className="relative aspect-square h-9 w-9">
                 <Image
                   fill
